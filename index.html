@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <title>Cotización</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="css/propios-style.css">
+
+</head>
+
+<body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+
+
+    <!-- MENU -->
+    <section class="navbar custom-navbar navbar-fixed-top" role="navigation">
+        <div class="container">
+
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                    </button>
+
+                <!-- lOGO TEXT HERE -->
+                <a href="#" class="navbar-brand">Cotización</a>
+            </div>
+
+            <!-- MENU LINKS -->
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-nav-first">
+                    <li><a href="#top" class="smoothScroll">Cotización</a></li>
+                    <li><a href="#" class="smoothScroll">Lista de Cotización</a></li>
+                    <li><a href="#team" class="smoothScroll">Pendientes</a></li>
+                    <li><a href="#courses" class="smoothScroll">Usuarios</a></li>
+                    <li><a href="#testimonial" class="smoothScroll">Clientes</a></li>
+                    <li><a href="#contact" class="smoothScroll">Contact</a></li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><i class="fa fa-phone"></i> +57 3106937786</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- HOME -->
+
+
+
+    <!-- ABOUT -->
+    <section id="">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-md-4 col-sm-5">
+
+                    <form id="miForm">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="rer">Referencia</label>
+                                <input type="text" class="form-control" id="referencia" placeholder="Referencia" value="">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputPassword4">Descripción</label>
+                                <input type="text" class="form-control" id="descripcion" placeholder="Descripción">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputEmail4">Marca</label>
+                                <input type="text" class="form-control" id="marca" placeholder="Marca">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputPassword4">Unidad</label>
+                                <input type="text" class="form-control" id="unidad" placeholder="Unidad">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputEmail4">Cantidad</label>
+                                <input type="number" class="form-control" id="cantidad" value=1>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputPassword4">Valor Unit</label>
+                                <input inputmode = "numeric" id = "valor_unit" class="form-control" >
+                            </div>
+                        </div>
+
+                        <div class="form-group col-md-3">
+                            <label for="agregar">Iva %</label>
+                            <input type="numbre" class="form-control" id="iva" value="0"><br>
+                            <butto id="agregar"  class="btn btn-primary">Agregar</button>
+                        </div>
+
+                    </form>
+                </div>
+
+                <div class="col-md-8 col-sm-6">
+                    <table id="customers">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Referencia</th>
+                                <th>Descripción</th>
+                                <th>Marca</th>
+                                <th>Unidad</th>
+                                <th>Cantidad</th>
+                                <th>Iva%</th>
+                                <th>Valor Unit</th>
+                                <th>Valor Total</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tablita">
+                      
+                        </tbody>
+                        
+                    </table>
+                </div>
+                <br><br>
+                <div class="col-md-12">
+                    <div class="form-group col-md-2" style="float:right; margin-top: 10px;">
+                        <label for="ValorT">Total $</label>
+                        <input  class="form-control" id="valorT" name="ValorT" value = "">
+                    </div>
+                </div>
+            </div>
+
+    </section>
+
+    <!-- SCRIPTS -->
+    <script src="js/simple-mask-money.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/custom.js"></script>
+    
+    
+
+</body>
+
+</html>
