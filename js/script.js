@@ -47,10 +47,15 @@ class Filas {
     ValortotalIva() {
 
         if (this.iva == 0) {
-            this.total = this.cantidad * this.valor_unit;
+            var valorU;
+
+            valorU = this.valor_unit.replace('.', '')
+            console.log(valorU);
+            this.total = this.cantidad * valorU.replace(',', '');
 
         } else {
-            this.total = this.cantidad * this.valor_unit * this.iva;
+            valorU = this.valor_unit.replace('.', '')
+            this.total = this.cantidad * valorU.replace(',', '') * this.iva;
         }
     }
 
@@ -66,13 +71,14 @@ class Filas {
         document.getElementById("valorT").value = all;
     }
 
-//     decimales() {
-//         var entrada = document.getElementById("valor_unit");
-//         SimpleMaskMoney.setMask(entrada);
+    decimales() {
+        var entrada = document.getElementById("valor_unit");
+        SimpleMaskMoney.setMask(entrada);
+        
 
-//     }
+    }
 
- }
+}
 
 new Filas();
 
