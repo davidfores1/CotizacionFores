@@ -969,3 +969,27 @@ footer .social-icon {
     background-color: #29ca8e;
     color: white;
 }
+
+.numItem {
+    width: 30px;
+    padding: 2px;
+}
+
+#sectTable {
+    padding: 50px;
+}
+
+.unidad {
+    width: 50px;
+    padding: 4px;
+}
+
+.cantidad {
+    width: 70px;
+    padding: 2px;
+}
+
+.valor_unit {
+    width: 90px;
+    padding: 2px;
+}

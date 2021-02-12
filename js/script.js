@@ -24,7 +24,7 @@ class Filas {
 
         this.referencia = document.querySelector('#referencia').value;
         this.descripcion = document.querySelector("#descripcion").value;
-        this.marca = document.querySelector("#marca").value;
+        //this.marca = document.querySelector("#marca").value;
         this.unidad = document.querySelector("#unidad").value;
         this.cantidad = document.querySelector("#cantidad").value;
         this.valor_unit = document.querySelector("#valor_unit").value;
@@ -34,7 +34,7 @@ class Filas {
         this.ValortotalIva();
         this.consecutivoFilas();
 
-        var fila = "<tr><td>" + this.num + "</td><td>" + this.referencia + "</td><td>" + this.descripcion + "</td><td>" + this.marca + "</td><td>" + this.unidad + "</td><td>" + this.cantidad + "</td><td>" + this.iva + "%</td><td>$ " + this.valor_unit + "</td><td>$ " + this.total + "</td></tr>";
+        var fila = "<tr><td> <input type='text' class='form-control numItem' name='numItem' value='" + this.num + "'></td><td><input type='text' class='form-control' name='referencia' size='15' value='" + this.referencia + "'></td><td><input type='text' class='form-control' name='descripcion' size='15' value='" + this.descripcion + "'></td><td><input type='text' class='form-control unidad' name='unidad' value='" + this.unidad + "'></td><td><input type='text' class='form-control cantidad' name='cantidad' value='" + this.cantidad + "'></td><td><input type='text' class='form-control numItem' name='iva' value='" + this.iva + "%'></td><td><input type='text' class='form-control valor_unit'name='valor_unit' value=' $" + this.valor_unit + "'></td><td><input type='text' class='form-control valor_unit'name='valor_unit' value=' $" + this.total + "'></td></tr>";
         var btn = document.createElement("TR");
         btn.innerHTML = fila;
 
@@ -74,12 +74,8 @@ class Filas {
     decimales() {
         var entrada = document.getElementById("valor_unit");
         SimpleMaskMoney.setMask(entrada);
-        
-
     }
 
 }
 
 new Filas();
-
-
